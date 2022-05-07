@@ -7,7 +7,11 @@ const PORT = process.env.PORT || 3000;
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: ['https://nlw-return-olive.vercel.app/'],
+  })
+);
 
 app.get('/', (request: Request, response: Response) => {
   return response.end('hello world');
