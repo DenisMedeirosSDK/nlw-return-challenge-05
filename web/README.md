@@ -16,18 +16,6 @@ Esse projeto frontend web feito para a NLW 08 Return, tem como o objetivo cadast
 
 ---
 
-## Mudanças no projeto
-
-### **Backend**
-
-- Validação de dados com JOI
-- Mail Template com handlebars
-- Validação de errors
-
-### **Frontend**
-
-- Dark mode - via preferencia do dispositivo
-
 ## Executando
 
 ```bash

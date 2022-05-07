@@ -19,6 +19,18 @@ Este projeto tem como objetivo coletar o feedback dos usuários.
 - [TailwindCSS](https://tailwindcss.com/)
 - [Expo](https://expo.io/)
 
+## Mudanças no projeto
+
+### **Backend**
+
+- Validação de dados com JOI
+- Mail Template com handlebars
+- Validação de errors
+
+### **Frontend**
+
+- Dark mode - via preferencia do dispositivo
+
 ## 🤯 Novos aprendizados
 
 - Envio de email com mailtrap
