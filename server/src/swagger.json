@@ -1,0 +1,61 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API Space Flight News - Coodesh Challenge",
+    "version": "1.0.0",
+    "contact": {
+      "email": "contato.denismedeiros@hotmail.com"
+    }
+  },
+  "paths": {
+    "/feedbacks": {
+      "post": {
+        "tags": ["Feedback"],
+        "summary": "Submit a new feedback",
+        "description": "Submit a new feedback",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Feedback"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Feedback sent"
+          },
+          "400": {
+            "description": "Generic error"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Feedback": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "required": true,
+            "example": "BUG"
+          },
+          "comment": {
+            "type": "string",
+            "required": true,
+            "example": "This is a bug"
+          },
+          "screenshot": {
+            "type": "string",
+            "format": "base64",
+            "example": "data:image/png;base64, "
+          }
+        }
+      }
+    }
+  }
+}
