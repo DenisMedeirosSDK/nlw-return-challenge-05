@@ -29,7 +29,7 @@ export class SubmitFeedbackUseCase {
 
     const templatePath = path.resolve(
       __dirname,
-      '../view/emails/SendMailFeedback.hbs'
+      '../view/emails/send-mail-feedback.hbs'
     );
 
     let variables = {
@@ -45,7 +45,6 @@ export class SubmitFeedbackUseCase {
 
     await this.feedbackRepository.create({ comment, type, screenshot });
 
-    console.log(variables);
     await this.mailAdapter.sendMail({
       subject: `Novo feedback de ${type}`,
       to: 'Denis Medeiros <contato.denismedeiros@hotmail.com>',

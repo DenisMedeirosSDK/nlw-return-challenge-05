@@ -23,9 +23,12 @@ Este projeto tem como objetivo coletar o feedback dos usuários.
 
 ### **Backend**
 
-- Validação de dados com JOI
+- Validação de entrada dados com JOI
 - Mail Template com handlebars
 - Validação de errors
+- Build com swc
+- Utilização de controllers
+- Documentação da API com swagger
 
 ### **Frontend**
 
