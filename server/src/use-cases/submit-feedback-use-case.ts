@@ -8,6 +8,11 @@ interface Request {
   screenshot?: string;
 }
 
+enum ImageType {
+  PNG = 'png',
+  JPEG = 'jpeg',
+}
+
 export class SubmitFeedbackUseCase {
   constructor(
     private readonly feedbackRepository: FeedbacksRepository,
@@ -23,8 +28,14 @@ export class SubmitFeedbackUseCase {
       throw new Error('Comment is required');
     }
 
-    if (screenshot && !screenshot.startsWith('data:image/png;base64,')) {
-      throw new Error('Invalid screenshot');
+    console.log('screenshot', screenshot);
+    if (
+      screenshot &&
+      !screenshot.startsWith(`data:image/${ImageType.JPEG};base64,`)
+    ) {
+      if (!screenshot.startsWith(`data:image/${ImageType.PNG};base64,`)) {
+        throw new Error('Screenshot must be a PNG or JPEG in base64');
+      }
     }
 
     const templatePath = path.resolve(

@@ -29,10 +29,15 @@ Este projeto tem como objetivo coletar o feedback dos usuários.
 - Build com swc
 - Utilização de controllers
 - Documentação da API com swagger
+- Aceitar Imagens em base64 em PNG e JPEG
 
 ### **Frontend**
 
+- Criação da página DoctorCare
 - Dark mode - via preferencia do dispositivo
+- Screenshot de acordo com o scroll da página
+- Widget de feedback flutuante ao dar scroll na página
+- Responsividade e Accessibilidade
 
 ## 🤯 Novos aprendizados
 
