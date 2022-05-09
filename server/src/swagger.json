@@ -52,7 +52,7 @@
           "screenshot": {
             "type": "string",
             "format": "base64",
-            "example": "data:image/png;base64, "
+            "example": "data:image/jpeg;base64, "
           }
         }
       }
