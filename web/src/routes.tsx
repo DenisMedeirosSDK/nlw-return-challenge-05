@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { App } from './App';
-import DoctorCare from './pages/DoctorCare';
+import LandingPage from './pages';
 
 export default function PagesRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<DoctorCare />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/feedback" element={<App />} />
       </Routes>
     </BrowserRouter>
