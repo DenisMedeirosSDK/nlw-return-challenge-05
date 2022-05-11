@@ -5,9 +5,9 @@ import {
   MapPin,
 } from 'phosphor-react';
 import { Link } from 'react-router-dom';
-import biker2Img from '../assets/images/coen-van-de-broek-OFyh9TpMyM8-unsplash.jpg';
-import biker3Img from '../assets/images/fred-pixlab-OD3iQ1S0-nE-unsplash.jpg';
-import bikerImg from '../assets/images/jasper-garratt-e_bZsyAGwQI-unsplash.jpg';
+import biker2Img from '../assets/images/coen-van-de-broek-OFyh9TpMyM8-unsplash.png';
+import biker3Img from '../assets/images/fred-pixlab-OD3iQ1S0-nE-unsplash.png';
+import bikerImg from '../assets/images/jasper-garratt-e_bZsyAGwQI-unsplash.png';
 import { CardService } from '../components/CardService';
 import { PrimaryButton } from '../components/PrimaryButton';
 import { Widget } from '../components/Widget';
@@ -40,7 +40,7 @@ export default function LandingPage() {
           <div className="mx-auto mt-14 md:mt-0 md:mx-0">
             <img
               src={bikerImg}
-              alt="Mulher negra vestindo moletom verde com as duas mãos no peito e sorrindo"
+              alt="Um ciclista com capacete de proteção posando para foto"
               className="w-[260px] h-auto md:h-[585px] md:w-auto object-scale-down"
             />
           </div>
@@ -133,7 +133,7 @@ export default function LandingPage() {
           <div className="mt-14 md:mt-0 md:mr-16 md:md:order-1">
             <img
               src={biker2Img}
-              alt="Doutor feliz segurando prancheta com pacientes"
+              alt="Duas ciclistas conversando enquanto pedalam"
               className="w-[320px] h-auto md:w-[480px] md:h-auto"
             />
           </div>
@@ -166,7 +166,7 @@ export default function LandingPage() {
           <div className="md:mt-0 md:ml-auto">
             <img
               src={biker3Img}
-              alt="Homem negro com moletom bege mexendo no celular e sorrindo"
+              alt="Grupo de ciclistas andando de bicicleta"
               className="w-[320px] h-auto md:w-[480px] object-cover md:h-auto"
             />
           </div>
